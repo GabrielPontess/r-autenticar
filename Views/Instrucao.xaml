@@ -1,0 +1,42 @@
+﻿<Window x:Class="RAutenticar.Views.Instrucao"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RAutenticar.Views"
+        mc:Ignorable="d"
+        Title="Instrucao" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="75"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" Background="#312C2B">
+            <Image Height="50" 
+                   Width="273.51" 
+                   Source="/Views/Logo-RAutenticar.png" HorizontalAlignment="Left" Margin="15,10,0,0"
+             />
+        </StackPanel>
+        <StackPanel Grid.Row="1">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <StackPanel Grid.Column="0">
+                    <Image Source="/Assets/Imagens/scan-facial.png" Width="300" HorizontalAlignment="Left" Margin="15,0,0,0" VerticalAlignment="Center"/>
+                </StackPanel>
+                <StackPanel Grid.Column="1">
+                    <Label Content="Salve" Margin="15,20,0,0" />
+                </StackPanel>
+            </Grid>
+        </StackPanel>
+    </Grid>
+</Window>
